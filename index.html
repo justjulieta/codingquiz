@@ -3,29 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Javascript Coding Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <div id="time-left-container" hidden>
-                Time Left: <span id="time-left"></span>
+            <div class="timer">
+            <div class="time-left-container" >Time Left</div>
+            <div class="timer_sec">60</div>
+            <br>
             </div>
         </header>
         <main>
             <div id="question-containder">
-                <hi id="question"></hi>
+                <hi id="questions"></hi>
                 <input id="start-button" type="button" value="Start Quiz!"
+                <div id="save-your-score-container">
+                    <p>To save your score, please enter your initials.</p>
+                    <input id="save-score-text" type="text">
+                    <input id="save-score-button" type="button" value="Save Score">
+                    <br>
+                </div>
             </div>
             <div id="answers">
                 <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
-                <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
-                <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
-                <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
-                <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
+                <input type="button" value="answer2" id="answer2" class="answer-button" hidden>
+                <input type="button" value="answer3" id="answer3" class="answer-button" hidden>
+                <input type="button" value="answer4" id="answer4" class="answer-button" hidden>
+                <br>
+                <span id="answer-result"></span>
             </div>
         </main>
-        <script src="Scripts/scripts.js"></script>
+        <script src="scripts.js" async defer></script>
     </body>
     </html>
