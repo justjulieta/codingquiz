@@ -1,4 +1,4 @@
-# codingquiz
+# Coding Quiz
 Made a simple timed test using Javascript.
 
 ## User Story 
