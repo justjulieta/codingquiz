@@ -14,4 +14,5 @@ After all the questions are answered or the time has reaced zero, the game will 
 ## Information
 
 Repo Link: https://github.com/justjulieta/codingquiz
+
 GitHub Username: justjulieta
