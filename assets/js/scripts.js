@@ -70,12 +70,12 @@ const quizQuestions = [
       answer: "option1"
   },
   {
-      question: "What is the correct JavaScript syntax to wite 'Hello World'?",
-      option1: "("Hello World")",
-      option2: "document.write("Hello World")",
-      option3: "document write("Hello World")",
-      option4: "write.document(Hellow World)",
-      answer: "option2"
+      question: "Who developed React??",
+      option1: "Meta",
+      option2: "Google",
+      option3: "Your Mom",
+      option4: "Twitter",
+      answer: "option1"
   },
   {
       question: "Which HTML element do we put the JavaScript inside?",
