@@ -6,36 +6,67 @@
         <title>Javascript Coding Quiz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
-        <header>
-            <div class="timer">
-            <div class="time-left-container" >Time Left</div>
-            <div class="timer_sec">60</div>
-            <br>
-            </div>
+        <section>
+            <header>
+                <p id="countdown">Time: 60 seconds</p>
         </header>
-        <main>
-            <div id="question-containder">
-                <hi id="questions"></hi>
-                <input id="start-button" type="button" value="Start Quiz!"
-                <div id="save-your-score-container">
-                    <p>To save your score, please enter your initials.</p>
-                    <input id="save-score-text" type="text">
-                    <input id="save-score-button" type="button" value="Save Score">
-                    <br>
-                </div>
+<main id="quiz">
+        <h2 id="countdown"></h2>
+        <!-- questions -->
+        <section id="quiz-questions">
+            <div class="question-column">
+                <figure class="card code-card">
+                    <h2 id="question-title" class="card-header">Question Title</h2>
+                    <div class="question">
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionA">
+                            <label for="answer" id="option1">Test Answer 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionB">
+                            <label for="answer" id="option2">Test Answer 2</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionC">
+                            <label for="answer" id="option3">Test Answer 3</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionD">
+                            <label for="answer" id="option4">Test Answer 4</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionD">
+                            <label for="answer" id="option5">Test Answer 5</label>
+                        </div>
+                    </div>
+                    <div id="question-results">
+                    </div>
+                </figure>
             </div>
-            <div id="answers">
-                <input type="button" value="answer1" id="answer1" class="answer-button" hidden>
-                <input type="button" value="answer2" id="answer2" class="answer-button" hidden>
-                <input type="button" value="answer3" id="answer3" class="answer-button" hidden>
-                <input type="button" value="answer4" id="answer4" class="answer-button" hidden>
-                <br>
-                <span id="answer-result"></span>
+            <div>
+                <button id="submit-question" onclick=submitQuestion>Continue</button>
             </div>
-        </main>
-        <script src="scripts.js" async defer></script>
+        </section>
+        <div class="final">
+            <h1>All done!</h1>
+            <p id="final-score">Congratulations on completing the quiz! Your final score is: </p>
+            <p>Input your name to save your high score!</p>
+            <input type="text" id="user-name">
+            <div>
+                <button id="submit-score" onclick=submitScore>Continue</button>
+            </div>
+
+        </div>
+        <div id="high-scores">
+            <h1>High Scores</h1>
+            <ul id="high-scores-list">
+            </ul>
+    </main>
+        </body>
+    </section>
+        <script src="/assets/js/scripts.js"></script>
     </body>
     </html>
