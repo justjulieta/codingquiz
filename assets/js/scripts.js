@@ -62,12 +62,28 @@ const questions = [
       answer: "option3"
   },
   {
+    question: "Which of the following is used to assign a value to a variable?",
+    option1: "-",
+    option2: "+",
+    option3: "=",
+    option4: "<.",
+    answer: "option3"
+  },
+  {
       question: "How do you create a function in Javascript?",
       option1: "function myFunction()",
       option2: "function = myFunction()",
       option3: "function.myfunction()",
       option4: "function:myfunction()",
       answer: "option1"
+  },
+  {
+    question: "Who developed Bootstrap?",
+    option1: "Meta",
+    option2: "MySpace",
+    option3: "Instagram",
+    option4: "Twitter",
+    answer: "option4"
   },
   {
       question: "Who developed React??",
@@ -78,13 +94,37 @@ const questions = [
       answer: "option1"
   },
   {
+    question: "When was GitHub founded?",
+    option1: "2008",
+    option2: "2000",
+    option3: "2001",
+    option4: "2009",
+    answer: "option1"
+  },
+  {
       question: "Which HTML element do we put the JavaScript inside?",
       option1: "<scripting>",
       option2: "<js>",
       option3: "<javascript>",
       option4: "<script>",
       answer: "option4"
-  }
+  },
+  {
+    question: "Which of the following is used to assign a value to a variable?",
+    option1: "let",
+    option2: "const",
+    option3: "var",
+    option4: "All of the above",
+    answer: "option4"
+  },
+  {
+    question: "When was HTML originally released?",
+    option1: "1990",
+    option2: "1992",
+    option3: "1993",
+    option4: "1998",
+    answer: "option3"
+  },
 ]
 
 function shuffleQuestions() {
@@ -112,7 +152,6 @@ function nextQuestion() {
     document.getElementById("option2").textContent = currentQuestion.option2;
     document.getElementById("option3").textContent = currentQuestion.option3;
     document.getElementById("option4").textContent = currentQuestion.option4;
-    document.getElementById("option5").textContent = currentQuestion.option5;
     currentQuestionAnswer = currentQuestion.answer;
 
     let options = document.querySelector('input[name="answer"]:checked')
@@ -150,7 +189,7 @@ function submitQuestion () {
                 setTimeout(navigateAfterSubmission, 1000);
             } else {
                 questionResults.style.color = "red"
-                questionResults.textContent = "Wrong! -10 seconds from the clock."
+                questionResults.textContent = "Incorrect! -10 seconds."
                 timeLeft = timeLeft - 10;
                 setTimeout(navigateAfterSubmission, 1000);
             }
