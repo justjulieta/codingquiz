@@ -44,7 +44,7 @@ function countdown() {
     }, 1000)
 }
 
-const quizQuestions = [
+const questions = [
   {
       question: "What year did Javascript first appear?",
       option1: "1992",
