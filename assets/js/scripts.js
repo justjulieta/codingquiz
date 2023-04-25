@@ -46,49 +46,44 @@ function countdown() {
 
 const quizQuestions = [
   {
-      number: 1,
       question: "What year did Javascript first appear?",
-      answer1: "1992",
-      answer2: "2000",
-      answer3: "1998",
-      answer4: "1996",
-      correct: "answer4"
+      option1: "1992",
+      option2: "2000",
+      option3: "1998",
+      option4: "1996",
+      answer: "option4"
   },
   {
-      number: 2,
       question: "Who trademarked 'JavaScript'?",
-      answer1: "Microsoft",
-      answer2: "Apple",
-      answer3: "Oracle Corporation",
-      answer4: "Alphabe Inc.",
-      correct: "answer3"
+      option1: "Microsoft",
+      option2: "Apple",
+      option3: "Oracle Corporation",
+      option4: "Alphabe Inc.",
+      answer: "option3"
   },
   {
-      number: 3,
       question: "How do you create a function in Javascript?",
-      answer1: "function myFunction()",
-      answer2: "function = myFunction()",
-      answer3: "function.myfunction()",
-      answer4: "function:myfunction()",
-      correct: "answer1"
+      option1: "function myFunction()",
+      option2: "function = myFunction()",
+      option3: "function.myfunction()",
+      option4: "function:myfunction()",
+      answer: "option1"
   },
   {
-      number: 4,
       question: "What is the correct JavaScript syntax to wite 'Hello World'?",
-      answer1: "("Hello World")",
-      answer2: "document.write("Hello World")",
-      answer3: "document write("Hello World")",
-      answer4: "write.document(Hellow World)",
-      correct: "answer2"
+      option1: "("Hello World")",
+      option2: "document.write("Hello World")",
+      option3: "document write("Hello World")",
+      option4: "write.document(Hellow World)",
+      answer: "option2"
   },
   {
-      number: 5,
       question: "Which HTML element do we put the JavaScript inside?",
-      answer1: "<scripting>",
-      answer2: "<js>",
-      answer3: "<javascript>",
-      answer4: "<script>",
-      correct: "answer4"
+      option1: "<scripting>",
+      option2: "<js>",
+      option3: "<javascript>",
+      option4: "<script>",
+      answer: "option4"
   }
 ]
 
